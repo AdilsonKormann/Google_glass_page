@@ -9,9 +9,19 @@ BODY
             text-align: justify;
             text-indent: 50px;
         }
+
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
         body {
             background-color:#dddddd;
             color:black;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         div#interface {
@@ -126,6 +136,38 @@ BODY
             float: left;
             border-right: 1px solid #606060;
             padding-right: 15px;
+        }
+
+        article#noticia-principal h2 {
+            font-size: 12pt;
+            color: #606060;
+            background-color: #dddddd;
+            padding: 5px 0px 5px 0px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        article#cabecalho-artigo h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            color: #606060;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .direita {
+            text-align: right;
+        }
+
+        article#cabecalho-artigo h2 {
+            font-size: 13pt;
+            color: #cecece;
+            background-color: #ffffff;
+            margin-bottom: 0px;            
+        }
+
+        article#cabecalho-artigo h3 {
+            font-size: 12px;
+            color: #606060;
         }
 
         table#tabelaspec {
