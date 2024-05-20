@@ -1,4 +1,8 @@
 @charset'UTF-8';
+@font-face {
+    font-family: 'FontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 BODY
         p {
@@ -6,9 +10,48 @@ BODY
             text-indent: 50px;
         }
         body {
-            background-color:aliceblue;
+            background-color:#dddddd;
             color:black;
         }
+
+        div#interface {
+            width: 900px;
+            background-color: #ffffff;
+            margin: -20px auto 0% auto;
+            box-shadow: 0px 0px 10px black;
+            padding: 10px 10px 10px 10px;
+        }
+
+        header#cabecalho img#icone {
+            position: absolute;
+            left: 950px ;
+            top: 70px;
+        }
+        
+        header#cabecalho {
+            border-bottom: 1px #606060 solid;
+            height: 150px;
+            background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+        }
+
+        header#cabecalho h1 {
+            font-family: 'FontLogo', Helvetica, sans-serif;
+            font-size: 30px;
+            color: #606060;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+
+        header#cabecalho h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: #888888;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+            padding: 0px;
+            margin-top: 0px;
+        }
+
         /*Formatação de imagens com legendas*/
         figure.foto-legenda {
             border: 8px solid white;
@@ -35,4 +78,107 @@ BODY
         figure.foto-legenda:hover figcaption {
             opacity: 1;
             cursor: pointer;
+        }
+
+        /*Menu*/
+
+        nav#menu ul {
+            display: block;
+        }
+
+        nav#menu  ul {
+            list-style: none;
+            text-transform: uppercase;
+            position: absolute;
+            top: -20px;
+            left: 300px;
+        }
+
+        nav#menu li {
+            display: inline-block;
+            background-color: #dddddd;
+            padding: 10px;
+            margin: 2px;
+            transition: background-color 1s;
+        }
+
+        nav#menu li:hover {
+            background-color: #606060;
+        }
+
+        nav#menu h1 {
+            display: none;
+        }
+
+        nav#menu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        nav#menu a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        section#corpo {
+            display: block;
+            width: 520px;
+            float: left;
+            border-right: 1px solid #606060;
+            padding-right: 15px;
+        }
+
+        table#tabelaspec {
+            border: 1px solid #606060;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table#tabelaspec td {
+            border: 1px solid #606060;
+            padding: 10px;
+            text-align: right;
+        }
+
+        table#tabelaspec td.ce {
+            color: #ffffff;
+            background-color: #606060;
+            vertical-align: top;
+        }
+
+        table#tabelaspec td.cd {
+            color: #606060;
+            background-color: #cecece;
+            font-weight: bold;
+        }
+
+        table#tabelaspec caption {
+            color: #888888;
+            font-size: 13pt;
+            font-weight: bolder;
+        }
+
+        table#tabelaspec caption span {
+            display: block;
+            float: right;
+            color: #000000;
+            font-size: 8pt;
+            margin-top: 10px;
+
+        }
+
+        aside#lateral {
+            display: block;
+            width: 300px;
+            float: right;
+        }
+
+        footer#rodape {
+            clear: both;
+            border-top: 1px solid #606060;
+        }
+
+        footer#rodape p {
+            text-align: center;
         }
